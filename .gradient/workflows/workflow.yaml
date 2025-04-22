@@ -22,4 +22,4 @@ jobs:
     uses: script@v1
     with:
       script: python /inputs/repo/model.py
-      image: tensorflow/tensorflow:1.14.0-py3
+      image: pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime

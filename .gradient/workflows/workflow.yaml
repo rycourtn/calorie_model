@@ -22,7 +22,10 @@ jobs:
     uses: script@v1
     with:
       script: |
+        echo "📂 Listing /notebooks:"
+        ls -lh /notebooks
         pip install -r /notebooks/requirements.txt
         python /inputs/repo/model.py
+
 
       image: pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime
